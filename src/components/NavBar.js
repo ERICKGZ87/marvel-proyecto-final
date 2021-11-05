@@ -51,12 +51,17 @@ const NavBar = () => {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link d-flex flex-column align-items-center" to="About">
+                                        <Link className="nav-link d-flex flex-column align-items-center" to="Contact">
                                             
-                                            About
+                                           Contact
                                         </Link>
                                     </li>
-                                 
+                                    <li className="nav-item">
+                                        <Link className="nav-link d-flex flex-column align-items-center" to="About">
+                                            
+                                           About
+                                        </Link>
+                                    </li>
 
                                 </ul>
 

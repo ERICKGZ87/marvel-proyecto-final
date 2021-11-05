@@ -6,6 +6,8 @@ import Personajes from './vistas/Personajes';
 import NavBar from './components/NavBar';
 import Comics from './vistas/Comics';
 import Series from './vistas/Series';
+import Contact from './vistas/Contact';
+import About from './vistas/About';
 
 
 const Main = () => {
@@ -22,8 +24,8 @@ const Main = () => {
        <Route exact path="/Personajes" component={Personajes} />
        <Route exact path="/Comics" component={Comics} />
        <Route exact path="/Series" component={Series} />
-
-
+       <Route exact path="/Contact" component={Contact} />
+       <Route exact path="/About" component={About} />
         
 
 
