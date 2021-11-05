@@ -39,13 +39,13 @@ const NavBar = () => {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link d-flex flex-column align-items-center" to="Planetas">
+                                        <Link className="nav-link d-flex flex-column align-items-center" to="Comics">
                                            
                                           Comics
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link d-flex flex-column align-items-center" to="Contact">
+                                        <Link className="nav-link d-flex flex-column align-items-center" to="Series">
                                           
                                            Series
                                         </Link>
