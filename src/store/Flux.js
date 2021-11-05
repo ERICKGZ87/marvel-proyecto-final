@@ -5,6 +5,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         store:
         {
             Personajes: null,
+            PersonajeEventos: null,
 
         },
         actions:
@@ -16,10 +17,12 @@ const getState = ({ getStore, getActions, setStore }) => {
                 return `${name} ${apellido}`;
             },
 
-            getData: (url) => {
+            getData1: (url) => {
                 fetch(url).then(resp => resp.json()).then(data => setStore({ Personajes: data.data.results }))
             },
-
+            getData2: (url) => {
+                fetch(url).then(resp => resp.json()).then(data => setStore({ PersonajeEventos: data.data.results[0] }))
+            },
         }
     }
 

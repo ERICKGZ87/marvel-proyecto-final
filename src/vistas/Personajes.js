@@ -17,6 +17,7 @@ const Personajes = () => {
                     {
                     Object.keys(store.Personajes).map(key =>{
                         const value = store.Personajes[key];
+                        let exten= value.thumbnail.extension
                         return(
 
                             <div className="col-sm-4 py-3" key={value.id}>
@@ -24,9 +25,10 @@ const Personajes = () => {
                                 <CardPersonajes
 
                                     titulo={value.name}
-                                    descripcion={value.modified}
-                                    Url={value.thumbnail.path+'.jpg'}
-                                    
+                                    descripcion={value.id}
+                                    Url={value.thumbnail.path+'.'+exten}
+                                    id={value.id}
+                                  
                                    
 
                                 />

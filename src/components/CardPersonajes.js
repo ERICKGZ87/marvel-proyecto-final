@@ -11,7 +11,7 @@ const CardPersonajes = ({ id,titulo,Url,descripcion}) => {
                 <p className="card-text">
                   {descripcion}
                 </p>
-                <Link to={"/Product/" + id + "/ProductDetalle"} className="btn btn-primary">
+                <Link to={"/Personajes/" + id + "/DetallePersonaje"} className="btn btn-primary">
                     Mas Informacion
                 </Link>
             </div>
