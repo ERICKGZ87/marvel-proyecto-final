@@ -23,7 +23,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 { "id": 2, "diameter": "12500", "rotation_period": "24", "orbital_period": "364", "gravity": "1 standard", "population": "2000000000", "climate": "temperate", "terrain": "grasslands, mountains", "surface_water": "40", "created": "2021-11-01T00:39:30.483Z", "edited": "2021-11-01T00:39:30.483Z", "name": "Alderaan" },
                 { "id": 3, "diameter": "10200", "rotation_period": "24", "orbital_period": "4818", "gravity": "1 standard", "population": "1000", "climate": "temperate, tropical", "terrain": "jungle, rainforests", "surface_water": "8", "created": "2021-11-01T00:39:30.483Z", "edited": "2021-11-01T00:39:30.483Z", "name": "Yavin IV" },
             ],
-            users: null,
+            Personajes: null,
 
         },
         actions:
@@ -35,8 +35,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                 return `${name} ${apellido}`;
             },
 
-            getUsers: (url) => {
-                fetch(url).then(resp => resp.json()).then(data => setStore({ users: data }))
+            getData: (url) => {
+                fetch(url).then(resp => resp.json()).then(data => setStore({ Personajes: data.data.results }))
             },
 
         }
