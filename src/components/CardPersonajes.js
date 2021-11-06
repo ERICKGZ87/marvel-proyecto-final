@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropType from "prop-types";
 
-const CardPersonajes = ({ id,titulo,Url,descripcion}) => {
+const CardPersonajes = ({ id,titulo,Url,descripcion,wiki}) => {
 
     return (
         <div className="card">
@@ -13,6 +13,10 @@ const CardPersonajes = ({ id,titulo,Url,descripcion}) => {
                 </p>
                 <Link to={"/Personajes/" + id + "/DetallePersonaje"} className="btn btn-primary">
                     Mas Informacion
+                </Link><br/>
+                    <a href={wiki} className="btn btn-primary" target="_blank"/>wiki2
+                <Link to={wiki} className="btn btn-primary">
+                    Wiki Marvel
                 </Link>
             </div>
         </div>

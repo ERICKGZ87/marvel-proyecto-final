@@ -21,7 +21,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 fetch(url).then(resp => resp.json()).then(data => setStore({ Personajes: data.data.results }))
             },
             getData2: (url) => {
-                fetch(url).then(resp => resp.json()).then(data => setStore({ PersonajeEventos: data.data.results[0] }))
+                fetch(url).then(resp => resp.json()).then(data => setStore({ PersonajeEventos: data.data.results[9].urls[1].url}))
             },
         }
     }
