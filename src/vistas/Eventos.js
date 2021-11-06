@@ -1,13 +1,10 @@
 import { useContext, useEffect } from "react";
-import CardPersonajes from "../components/CardPersonajes";
-
+import CardEventos from "../components/CardEventos";
 
 
 import { Context } from "../store/appContext";
 
-
-
-const Personajes = () => {
+const Eventos = () => {
     const { store, actions } = useContext(Context);
 
 
@@ -18,9 +15,9 @@ const Personajes = () => {
 
                     {
 
-                        Object.keys(store.Personajes).map(key => {
-                            const value = store.Personajes[key];
-                            let UrlWiki = value.urls[0].url
+                        Object.keys(store.PersonajeEventos).map(key => {
+                            const value = store.PersonajeEventos[key];
+                            //let UrlWiki = value.urls[0].url
                             let exten = value.thumbnail.extension
 
 
@@ -29,12 +26,17 @@ const Personajes = () => {
 
                                 <div className="col-sm-4 py-3" key={value.id}>
 
-                                    <CardPersonajes
+                                    <CardEventos
 
-                                        titulo={value.name}
+                                        titulo={value.title}
+
+                                        descripcion={value.description}
                                         Url={value.thumbnail.path + '.' + exten}
-                                        id={value.id}
-                                        wiki={UrlWiki}
+                                        item1={value.start}
+                                        item2={value.modified}
+                                        item3={value.end}
+                                     
+                                      
 
 
 
@@ -60,4 +62,4 @@ const Personajes = () => {
         </>
     )
 }
-export default Personajes;
+export default Eventos;

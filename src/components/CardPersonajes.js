@@ -14,10 +14,10 @@ const CardPersonajes = ({ id,titulo,Url,descripcion,wiki}) => {
                 <Link to={"/Personajes/" + id + "/DetallePersonaje"} className="btn btn-primary">
                     Mas Informacion
                 </Link><br/>
-                    <a href={wiki} className="btn btn-primary" target="_blank"/>wiki2
-                <Link to={wiki} className="btn btn-primary">
-                    Wiki Marvel
-                </Link>
+
+                <a href={wiki} className="link-primary" target="_blank">Wiki Marvel</a>
+                    
+               
             </div>
         </div>
 

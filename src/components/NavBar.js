@@ -39,6 +39,12 @@ const NavBar = () => {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
+                                        <Link className="nav-link d-flex flex-column align-items-center" to="Eventos">
+                                          
+                                          Eventos
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
                                         <Link className="nav-link d-flex flex-column align-items-center" to="Comics">
                                            
                                           Comics

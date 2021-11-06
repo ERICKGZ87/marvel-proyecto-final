@@ -13,15 +13,21 @@ const DetallePersonaje = (props) => {
     const { product_id } = useParams();
 
     const [selected, setSelected] = useState(null);
-
+  
     useEffect(() => {
  
         const SelectedProd = store.Personajes.find((prod) => prod.id === parseInt(product_id));
-        
+       
         setSelected(SelectedProd);
         console.log(SelectedProd)
         console.log(product_id)
-    }, [])
+
+    }, [])  
+    let extensionImagen = selected && selected.thumbnail.extension
+
+
+
+
 
     return (
 
@@ -32,9 +38,10 @@ const DetallePersonaje = (props) => {
 
                 <div className="col-md-12">
                     <div className="card mb-4" style={{ maxWidth: 700 }}>
-                        <div className="row g-0">
+                        <div className="row g-0"> 
                             <div className="col-md-4">
-                                <img src={selected && selected.thumbnail.path + '.jpg'} className="card-img-top img-fluid rounded-start" alt="..." />
+                          
+                                <img src={selected && selected.thumbnail.path +'.'+extensionImagen} className="card-img-top img-fluid rounded-start" alt="..." />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -43,8 +50,11 @@ const DetallePersonaje = (props) => {
                                         {selected && selected.description}
                                     </p>
                                     <p className="card-text">
+                                    <h5>Story Mas Importante </h5>
                                         <ul>
-                                            <li key={selected && selected.id}>{selected && selected.name}</li>
+                                                
+                                            <li key={selected && selected.id}>{selected && 
+                                            selected.stories.items[0].name}</li>
                                         </ul>
                                     </p>
 
