@@ -7,8 +7,10 @@ const NavBar = () => {
         <div className="container">
 
             <div className="row">
+                <div className="col-md-4">
 
-                <div className="col-md-5">
+                </div>
+                <div className="col-md-4">
                     <nav className="navbar navbar-expand-lg navbar-dark-brand-color ">
 
                         <div className="container-fluid nav justify-content-center">
@@ -78,7 +80,7 @@ const NavBar = () => {
                     </nav>
 
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-4">
 
                 </div>
 
