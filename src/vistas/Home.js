@@ -19,6 +19,9 @@ const Home = () => {
       item5="https://img.ecartelera.com/noticias/fotos/60400/60446/1.jpg"
       item6="https://lumiere-a.akamaihd.net/v1/images/keyart_es_ea2a4cef.jpeg?region=420,0,1080,1080&width=960"
       item7="https://static.dw.com/image/52649694_303.jpg"
+      item8="https://thefreakhunterhome.files.wordpress.com/2021/01/disney-marvel-series.jpg"
+      item9="https://www.fmdos.cl/wp-content/uploads/2021/07/Estrenos-de-series-Marvel-2021-600x315.png"
+      item10="https://aws.glamour.mx/prod/designs/v1/assets/620x693/256601.jpeg"
   />
 
    

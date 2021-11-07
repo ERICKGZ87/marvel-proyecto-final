@@ -1,7 +1,7 @@
 
 import PropType from "prop-types";
 
-const Carrousel = ({ item1, item2, item3, item4, item5, item6, item7 }) => {
+const Carrousel = ({ item1, item2, item3, item4, item5, item6, item7,item8, item9, item10}) => {
 
     return (
         <div
@@ -30,6 +30,15 @@ const Carrousel = ({ item1, item2, item3, item4, item5, item6, item7 }) => {
                 </div>
                 <div className="carousel-item" data-bs-interval={2000}>
                     <img src={item7} className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item" data-bs-interval={2000}>
+                    <img src={item8} className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item" data-bs-interval={2000}>
+                    <img src={item9} className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item" data-bs-interval={2000}>
+                    <img src={item10} className="d-block w-100" alt="..." />
                 </div>
             </div>
             <button
