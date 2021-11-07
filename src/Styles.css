@@ -1,17 +1,22 @@
 
 body{
-
-    background-color:aquamarine;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
 }
 
-.card img{
-width: 350;
-height: 450px;
-    
+.width{
+    width: 280px;
+
 }
 
 .logoHome{
-
     width: 40px;
     height: 40px;
 }
@@ -22,3 +27,54 @@ height: 450px;
 
 }
 
+.card-img-top{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.nav-item{
+    width: 80px;
+    height: 80px;
+}
+
+/* The sidenav */
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Page content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+
+.header{
+    width: 98%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav-link{
+    border-radius: 10%;
+    display: inline-block;
+}
+
+#footer{
+    border-radius: 7px;
+    padding: auto;
+height: 50px;
+    background-color:darkslategrey;
+}
+
+#footer h4{
+
+ padding: 10px 15px 15px 15px;;
+}

@@ -11,7 +11,7 @@ const CardComics = ({ title,description,fotoChica, id }) => {
                 <p className="card-text">
                   {description}
                 </p>
-                <Link to={"/Comics/" + id + "/DetalleComics"} className="btn btn-primary">
+                <Link to={"/Comics/" + id + "/DetalleComics"} className="btn btn-warning">
                     Mas Informacion
                 </Link><br/>       
             </div>
