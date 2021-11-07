@@ -24,7 +24,7 @@ const Eventos = () => {
 
                             return (
 
-                                <div className="col-sm-4 py-3" key={value.id}>
+                                <div className="col-sm-4 py-4" key={value.id}>
 
                                     <CardEventos
 
@@ -32,9 +32,9 @@ const Eventos = () => {
 
                                         descripcion={value.description}
                                         Url={value.thumbnail.path + '.' + exten}
-                                        item1={value.start}
-                                        item2={value.modified}
-                                        item3={value.end}
+                                       // item1={value.start}
+                                       // item2={value.modified}
+                                       // item3={value.end}
                                      
                                       
 
