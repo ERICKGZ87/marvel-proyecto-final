@@ -66,3 +66,15 @@ body{
     border-radius: 10%;
     display: inline-block;
 }
+
+#footer{
+    border-radius: 7px;
+    padding: auto;
+height: 50px;
+    background-color:darkslategrey;
+}
+
+#footer h4{
+
+ padding: 10px 15px 15px 15px;;
+}

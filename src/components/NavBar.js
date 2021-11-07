@@ -30,7 +30,7 @@ function openNav() {
 
         <div>
         <button className="btn">sadsdasd</button>
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" className="sidenav">
                 <Link className="nav-link d-flex flex-column align-items-center text-dark bg-warning my-1" aria-current="page" to="/">
                     <img className="logoHome" src="./Icon1.png" />
                     Home

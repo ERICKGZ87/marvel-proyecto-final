@@ -11,6 +11,7 @@ import About from './vistas/About';
 import DetallePersonaje from './vistas/DetallePersonaje';
 import DetalleComics from './vistas/DetalleComics';
 import Eventos from './vistas/Eventos';
+import Footer from './components/Footer';
 
 
 const Main = () => {
@@ -37,8 +38,9 @@ const Main = () => {
 
 
        </Switch>
-               
+           
        </div>
+       <Footer/> 
     </BrowserRouter>
     )
 }
