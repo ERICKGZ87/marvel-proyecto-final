@@ -16,7 +16,8 @@ import Eventos from './vistas/Eventos';
 const Main = () => {
     return (
         <BrowserRouter>
-         <NavBar/>
+        <div className="container"> 
+        <NavBar/>
    
        
 
@@ -37,8 +38,8 @@ const Main = () => {
 
        </Switch>
                
-            
-        </BrowserRouter>
+       </div>
+    </BrowserRouter>
     )
 }
 

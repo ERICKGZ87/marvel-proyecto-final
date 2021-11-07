@@ -11,7 +11,7 @@ const CardPersonajes = ({ id,titulo,Url,descripcion,wiki}) => {
                 <p className="card-text">
                   {descripcion}
                 </p>
-                <Link to={"/Personajes/" + id + "/DetallePersonaje"} className="btn btn-primary">
+                <Link to={"/Personajes/" + id + "/DetallePersonaje"} className="btn btn-warning">
                     Mas Informacion
                 </Link><br/>
 

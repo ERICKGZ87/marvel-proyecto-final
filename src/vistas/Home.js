@@ -9,8 +9,10 @@ const Home = () => {
 <div className="row">
     <div className="col-md-1"></div>
    
-    <div className="col-md-10">
-   
+    <div className="col-md-10 justify-content-center">
+    <img className="header mt-5" src="https://hjchelmets.eu/wp-content/uploads/2020/06/marvel-header2s.jpg" />
+    <img className="mt-5" src="./Inicio.gif" />
+{/*    
   <Carrousel
       item1="https://phantom-marca.unidadeditorial.es/838d5234c7803b705c60abc334975919/resize/1320/f/jpg/assets/multimedia/imagenes/2021/07/06/16255683165037.jpg"
       item2="https://www.altonivel.com.mx/wp-content/uploads/2018/05/avengers.jpg"
@@ -23,7 +25,7 @@ const Home = () => {
       item9="https://www.fmdos.cl/wp-content/uploads/2021/07/Estrenos-de-series-Marvel-2021-600x315.png"
       item10="https://aws.glamour.mx/prod/designs/v1/assets/620x693/256601.jpeg"
   />
-
+ */}
    
     </div>
     <div className="col-md-1"></div>
