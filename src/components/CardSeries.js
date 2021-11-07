@@ -19,7 +19,7 @@ const CardSeries = ({ title,description,fotoChica, id }) => {
     )
 
 }
-CardComics.PropType = {
+CardSeries.PropType = {
     descripcion: PropType.string,
     titulo: PropType.string,
     id:PropType.number,
