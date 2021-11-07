@@ -1,24 +1,57 @@
+import { useContext, useEffect } from "react";
+import CardComics from "../components/CardComics";
+
+
+
+import { Context } from "../store/appContext";
+
+
 
 const Comics = () => {
+    const { store } = useContext(Context);
+
+    useEffect(() => {
+
+        console.log(store)
+
+    }, [])  
+
 
     return (
         <>
- <div className="container">
+            <div className="container">
+                <div className="row">
 
-<div className="row">
-    <div className="col-md-1"></div>
-    <h1>comics</h1>
-    <div className="col-md-10">
+                    {
 
-   
-  
-   
-    </div>
-    <div className="col-md-1"></div>
-</div>
+                        Object.keys(store.Comics).map(key => {
+                            const value = store.Comics[key];
+                            let exten = value.thumbnail.extension
 
-</div>
-           
+                            return (
+
+                                <div className="col-sm-4 py-3" key={value.id}>
+
+                                    <CardComics
+                                        title={value.title}
+                                        description={value.description}
+                                        fotoChica={value.thumbnail.path + '.' + exten}
+                                        id={value.id}
+                                    />
+                                </div>
+                            )
+
+                        }
+                        )
+
+
+
+                    }
+
+
+
+                </div>
+            </div>
         </>
     )
 }

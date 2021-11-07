@@ -22,6 +22,7 @@ const InjectContext = PassedComponen => {
         useEffect(() => {
             state.actions.getData1("https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=2c7646b1592cf7f1709584014a70e2b5&hash=e76786c27c33203502f260f6be27384b")
             state.actions.getData2("https://gateway.marvel.com:443/v1/public/events?ts=1&apikey=2c7646b1592cf7f1709584014a70e2b5&hash=e76786c27c33203502f260f6be27384b")
+            state.actions.getData3("https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=2c7646b1592cf7f1709584014a70e2b5&hash=e76786c27c33203502f260f6be27384b")
         }, [])
 
         return (

@@ -9,6 +9,7 @@ import Series from './vistas/Series';
 import Contact from './vistas/Contact';
 import About from './vistas/About';
 import DetallePersonaje from './vistas/DetallePersonaje';
+import DetalleComics from './vistas/DetalleComics';
 import Eventos from './vistas/Eventos';
 
 
@@ -25,6 +26,7 @@ const Main = () => {
        <Route exact path="/" component={Home} />
        <Route exact path="/Personajes" component={Personajes} />
        <Route exact path="/Personajes/:product_id/DetallePersonaje" component={DetallePersonaje} />
+       <Route exact path="/Comics/:product_id/DetalleComics" component={DetalleComics} />
        <Route exact path="/Comics" component={Comics} />
        <Route exact path="/Series" component={Series} />
        <Route exact path="/Eventos" component={Eventos} />
