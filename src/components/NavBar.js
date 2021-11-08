@@ -40,6 +40,10 @@ const NavBar = () => {
                             <img className="logoHome me-3" src="./Icon6.png" />
                             Contacto
                         </Link>
+                        <Link className="nav-link text-dark fw-bold bg-warning m-3" to="About">
+                            <img className="logoHome me-3" src="./Icon7.png" />
+                            About
+                        </Link>
                     </div>
                 </div>
             </div>
