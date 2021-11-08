@@ -33,51 +33,51 @@ const DetallePersonaje = (props) => {
 
         <div className="container">
 
-            <div className="row">
+        <div className="row">
 
 
-                <div className="col-md-12">
-                    <div className="card mb-4" style={{ maxWidth: 700 }}>
-                        <div className="row g-0"> 
-                            <div className="col-md-4">
-                          
-                                <img src={selected && selected.thumbnail.path +'.'+extensionImagen} className="card-img-top img-fluid rounded-start" alt="..." />
+            <div className="col-md-12 mt-4">
+                <div className="card mb-4" >
+                    <div className="row g-0"> 
+                        <div className="col-md-4 me-4">
+                      
+                            <img src={selected && selected.thumbnail.path +'.'+extensionImagen} className="card-img-top img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div className="col-md-7">
+                            <div className="card-body">
+                                <h5 className="card-title">{selected && selected.name}</h5>
+                                <p className="card-text">
+                                    {selected && selected.description}
+                                </p>
+                                <p className="card-text">
+                                <h5>Story Mas Importante </h5>
+                                    <ul>
+                                            
+                                        <li key={selected && selected.id}>{selected && 
+                                        selected.stories.items[0].name}</li>
+                                    </ul>
+                                </p>
+
+
                             </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">{selected && selected.name}</h5>
-                                    <p className="card-text">
-                                        {selected && selected.description}
-                                    </p>
-                                    <p className="card-text">
-                                    <h5>Story Mas Importante </h5>
-                                        <ul>
-                                                
-                                            <li key={selected && selected.id}>{selected && 
-                                            selected.stories.items[0].name}</li>
-                                        </ul>
-                                    </p>
+                            <button className="btn btn-warning"
+                                onClick={Historia.goBack}>
+                                Regresar
+                            </button>
 
-
-                                </div>
-                                <button className="btn btn-warning"
-                                    onClick={Historia.goBack}>
-                                    Regresar
-                                </button>
-
-                                
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
 
 
+
+
         </div>
+
+
+    </div>
 
 
     )
