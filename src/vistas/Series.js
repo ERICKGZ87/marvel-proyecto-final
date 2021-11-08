@@ -18,7 +18,7 @@ const Series = () => {
 
     const callApi = async()=>{
 
-        let url = "https://gateway.marvel.com:443/v1/public/series?ts=1&apikey=2c7646b1592cf7f1709584014a70e2b5&hash=e76786c27c33203502f260f6be27384b"
+        let url = "https://gateway.marvel.com:443/v1/public/series?ts=1&apikey=8a432a54a0c45f83ea1e0ba67bb5e322&hash=8856823601a2b25665d210eabe018e39"
     
        await fetch(url).then(response => response.json())
         .then(data => {
