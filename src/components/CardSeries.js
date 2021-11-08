@@ -19,7 +19,7 @@ const CardSeries = ({ title,description,fotoChica, id, Url }) => {
                           description: description,
                           foto: fotoChica
                         }}}
-                    className="btn btn-primary">
+                    className="btn btn-warning">
                     Mas Informacion
                 </Link><br/>       
             </div>
