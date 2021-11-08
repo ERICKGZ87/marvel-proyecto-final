@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropType from "prop-types";
 
-const CardSeries = ({ title,description,fotoChica, id }) => {
+const CardSeries = ({ title,description,fotoChica, id, Url }) => {
 
     return (
         <div className="card">
@@ -11,7 +11,15 @@ const CardSeries = ({ title,description,fotoChica, id }) => {
                 <p className="card-text">
                   {description}
                 </p>
-                <Link to={"/Series" + id + "/DetalleSeries"} className="btn btn-primary">
+                <Link 
+                    to={{ 
+                        pathname: `/Series/${id}`, 
+                        state: {
+                          title: title, 
+                          description: description,
+                          foto: fotoChica
+                        }}}
+                    className="btn btn-primary">
                     Mas Informacion
                 </Link><br/>       
             </div>
@@ -20,10 +28,11 @@ const CardSeries = ({ title,description,fotoChica, id }) => {
 
 }
 CardSeries.PropType = {
-    descripcion: PropType.string,
-    titulo: PropType.string,
+    description: PropType.string,
+    title: PropType.string,
     id:PropType.number,
     Url: PropType.string,
+    fotoChica:PropType.string,
     }
     
 export default CardSeries;

@@ -12,7 +12,7 @@ import DetallePersonaje from './vistas/DetallePersonaje';
 import DetalleComics from './vistas/DetalleComics';
 import Eventos from './vistas/Eventos';
 import Footer from './components/Footer';
-
+import DetalleSeries from './vistas/DetalleSeries'
 
 const Main = () => {
     return (
@@ -29,6 +29,7 @@ const Main = () => {
        <Route exact path="/Personajes" component={Personajes} />
        <Route exact path="/Personajes/:product_id/DetallePersonaje" component={DetallePersonaje} />
        <Route exact path="/Comics/:product_id/DetalleComics" component={DetalleComics} />
+       <Route exact path="/series/:product_id/" component={DetalleSeries} />
        <Route exact path="/Comics" component={Comics} />
        <Route exact path="/Series" component={Series} />
        <Route exact path="/Eventos" component={Eventos} />
