@@ -33,7 +33,7 @@ const Main = () => {
        <Route exact path="/Comics" component={Comics} />
        <Route exact path="/Series" component={Series} />
        <Route exact path="/Eventos" component={Eventos} />
-       <Route exact path="/Contact" component={Contact} />
+       <Route exact path="/Contacto" component={Contact} />
        <Route exact path="/About" component={About} />
         
 

@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <>
             <div className="container">
-                <div className="d-flex justify-content-center mt-3">
+                <div className="d-flex justify-content-center my-3">
                     <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><GiHamburgerMenu /> Menu</button>
                 </div>
 
@@ -35,6 +35,10 @@ const NavBar = () => {
                         <Link className="nav-link text-dark fw-bold bg-warning m-3" to="Series">
                             <img className="logoHome me-3" src="./Icon5.png" />
                             Series
+                        </Link>
+                        <Link className="nav-link text-dark fw-bold bg-warning m-3" to="Contacto">
+                            <img className="logoHome me-3" src="./Icon6.png" />
+                            Contacto
                         </Link>
                     </div>
                 </div>
