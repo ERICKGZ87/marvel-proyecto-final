@@ -11,7 +11,7 @@ const Home = () => {
    
     <div className="col-md-10 justify-content-center">
     <img className="header mt-5" src="https://hjchelmets.eu/wp-content/uploads/2020/06/marvel-header2s.jpg" />
-    <img className="mt-5" src="./Inicio.gif" />
+    <img className="header2 mt-5 mb-5" src="./Inicio.gif" />
 {/*    
   <Carrousel
       item1="https://phantom-marca.unidadeditorial.es/838d5234c7803b705c60abc334975919/resize/1320/f/jpg/assets/multimedia/imagenes/2021/07/06/16255683165037.jpg"

@@ -27,7 +27,7 @@ const Personajes = () => {
 
                             return (
 
-                                <div className="col-sm-4 py-3" key={value.id}>
+                                <div className="col-sm-4 col-xs-2 py-3" key={value.id}>
 
                                     <CardPersonajes
 
