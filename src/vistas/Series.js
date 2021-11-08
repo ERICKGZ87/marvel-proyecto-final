@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import CardSeries from "../components/CardSeries";
 
 
@@ -9,13 +9,26 @@ import { Context } from "../store/appContext";
 
 const Series = () => {
     const { store } = useContext(Context);
+    const [ respApi, setRespApi ] = useState([])
 
     useEffect(() => {
-
-        console.log(store)
+        callApi()
 
     }, [])  
 
+    const callApi = async()=>{
+
+        let url = "https://gateway.marvel.com:443/v1/public/series?ts=1&apikey=2c7646b1592cf7f1709584014a70e2b5&hash=e76786c27c33203502f260f6be27384b"
+    
+       await fetch(url).then(response => response.json())
+        .then(data => {
+            console.log("data aqui", data.data.results)
+            setRespApi(data.data.results)
+        })
+        .catch(e=>{
+          console.log("error consulta series", e)
+        })
+    }
 
     return (
         <>
@@ -24,19 +37,16 @@ const Series = () => {
 
                     {
 
-                        Object.keys(store.Series).map(key => {
-                            const value = store.Series[key];
-                            let exten = value.thumbnail.extension
-
+                      respApi.length >= 1 && respApi.map((k, value) => {
+                
+                            console.log("img", `${k.thumbnail.path}.${k.thumbnail.extension}`)
                             return (
-
-                                <div className="col-sm-4 py-3" key={value.id}>
-
+                                <div className="col-sm-4 py-3" key={k.id}>
                                     <CardSeries
-                                        title={value.title}
-                                        description={value.description}
-                                        fotoChica={value.thumbnail.path + '.' + exten}
-                                        id={value.id}
+                                        title={k.title}
+                                        description={k.description}
+                                        fotoChica={`${k.thumbnail.path}.${k.thumbnail.extension}`}
+                                        id={k.id}
                                     />
                                 </div>
                             )
