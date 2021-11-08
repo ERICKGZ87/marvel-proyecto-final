@@ -36,7 +36,7 @@ const Contact = () => {
                             </div>
                             <div className="col-md-4">
                                 <label htmlFor="validationCustomUsername" className="form-label">
-                                    Username
+                                    E-mail
                                 </label>
                                 <div className="input-group has-validation">
                                     <span className="input-group-text" id="inputGroupPrepend">
@@ -72,6 +72,7 @@ const Contact = () => {
                                     <option selected disabled value>
                                         Choose...
                                     </option>
+                                   
                                     <option>...</option>
                                 </select>
                                 <div className="invalid-feedback">Please select a valid state.</div>
@@ -98,14 +99,14 @@ const Contact = () => {
                                         required
                                     />
                                     <label className="form-check-label" htmlFor="invalidCheck">
-                                        Agree to terms and conditions
+                                        Marvel store promo emails
                                     </label>
                                     <div className="invalid-feedback">You must agree before submitting.</div>
                                 </div>
                             </div>
                             <div className="col-12">
                                 <button className="btn btn-primary" type="submit">
-                                    Submit form
+                                    Send
                                 </button>
                             </div>
                         </form></div>
