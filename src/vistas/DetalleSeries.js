@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { useParams, useHistory, useLocation} from "react-router-dom";
-import { useContext } from "react";
-import { Context } from "../store/appContext";
+import { useEffect } from "react";
+import { useParams, useHistory, useLocation} from "react-router-dom";;
 
 const DetalleSeries = (props) => {
 
@@ -45,9 +43,9 @@ const DetalleSeries = (props) => {
                             </div>
                             <div className="col-md-7">
                                 <div className="card-body">
-                                    <h5 className="card-title">{!location.state.title? location.state.title : null}</h5>
+                                    <h5 className="card-title">{location.state.title? location.state.title : null}</h5>
                                     <p className="card-text">
-                                    {!location.state.description? location.state.description : null}
+                                    {location.state.description? location.state.description : null}
                                     </p>
                                     <p className="card-text">
                                     </p>
